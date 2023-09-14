@@ -1,0 +1,28 @@
+body {
+    background-color: #507151;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, a {
+    padding: 1em;
+    color: rgb(255, 153, 0);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-size: 22px;
+    display: block;
+    line-height: 35px;
+    font-family: 'Kanit', sans-serif;
+}
