@@ -159,15 +159,15 @@ button:active {
 }
 
 @media (max-width: 767px) {
-    .app__section-banner-container {
+    .border {
         width: 32rem;
     }
 
-    .app__title {
+    .pais {
         font-size: 2.6rem;
     }
 
-    .app__card-timer {
+    .homem {
         font-size: 6rem;
     }
 }
