@@ -1,0 +1,1 @@
+export const senhaIncorreta = document.getElementById('senha')

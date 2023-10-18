@@ -1,26 +1,28 @@
-const express = required('express');
-const multer = required('multer');
-const path = required('path');
+const url = "localhost:6000/api" 
 
-const app = express();
-const port = 3000;
+document.addEventListener('DOMContentLoaded', function () {
+    const uploadform = document.getElementById('upload-form')
+    const imageInput = document.getElementById('image-inpu')
+    const uploadButton = document.getElementById('upload-button')
+    const uploadStatus = document.getElementById('upload-status')
+})
 
-// Consfiguração para salvar os arquivos na pasta 'uploads'
-const storage = multer.diskStorage({
-    destinatin: (req, file, cb) => {
-        cb(null, './Uploads/');
-    },
-    fileName: (req, file, cb) => {
-        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalName));
-    },
-});
+uploadButton.addEventListener('click', () => {
+    const file = imageInput.files[0] 
 
-const upload = multer({ sorage });
+    if (file) {
+        const formData = new FormData()
+        formData.append('image', file)
 
-app.post('./Uploads/', upload.single('image'), (req, res) => {
-    res.send('Imagem enviada com sucesso!');
-});
-
-app.listen(port, () => {
-    console.log(`Servidor está ouvindo na porta ${port}`);
-});
+        fetch('/upload', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            uploadStatus.innerHTML = 'Erro ao fazer o upload'
+        })
+    } else {
+        uploadStatus.innerHTML = 'Selecione um arquivo para fazer upload'
+    }
+})

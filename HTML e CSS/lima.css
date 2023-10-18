@@ -1,8 +1,7 @@
 
 body {
-    background-color: #ff7300;
-    width: auto;
-    height: auto;
+    background-image: url(/IMG/fundo-principal.jpg);
+    
 
 
 }
@@ -32,7 +31,7 @@ body {
     margin-left: 5em;
     margin-right: 5em;
     padding: 1em;
-    background-color: #fff;
+    background-color: transparent;
     transition: all 0.5s;
 }
 
@@ -61,12 +60,12 @@ h3 {
     text-align: center;
     justify-content: center;
     color: black;
-    background-color: rgb(255, 166, 0);
+
     border: 0 solid #131313;
     border-radius: 360px;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    box-shadow: 1px 2px 2px 2px #ff7300;
+    box-shadow: 1px 2px 2px 2px #CCCCCC;
 }
 
 a {
@@ -83,6 +82,8 @@ a {
 a:hover {
     text-shadow: 2px 2px 3px #888;
     text-decoration: underline;
+    border-radius: 30px;
+    box-shadow: 1px 2px 2px 2px #CCCCCC;
 }
 
 .album {
