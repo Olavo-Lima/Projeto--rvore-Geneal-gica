@@ -5,16 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        //Verifique se o nome de usuário e senha estão corretos (substia isso pelo mecanismo de autenticação)
-        const username = 'usuario' // Substitua pelo nome de usuário correto
-        const password = 'senha123'// substitua pela senha correta 
+        const username = document.getElementById('username').value
+        const password = document.getElementById('password').value
 
-        const inputUsername = loginForm.elements.username.value;
-        const inputPassword = loginForm.elements.password.value;
-
-        if (inputUsername === username && inputPassword === password) {
-            // Redirecione o usuário para a página de sucesso ou excute outra ação
-            location.href 
+        if (username === 'usuario' && password === 'senha') {
+            alert ("Login bem sucedido!")
+            window.location.href = "/HTML e CSS/Recordações/HTML e CSS/HOME/home.html"
+        } else {
+            alert ('Senha ou usário incorretos')
         }
     })
 })

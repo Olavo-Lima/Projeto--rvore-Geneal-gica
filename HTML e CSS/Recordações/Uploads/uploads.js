@@ -20,9 +20,13 @@ uploadButton.addEventListener('click', () => {
         })
         .then(response => response.json())
         .then(data => {
-            uploadStatus.innerHTML = 'Erro ao fazer o upload'
+            uploadStatus.innerHTML = `Upload bem sucedido: ${data.fileName}`
+        })
+        .catch(error => {
+            console.error('Erro ao fazer upload', error)
+            uploadStatus.innerHTML = 'Erro ao fazer upload'
         })
     } else {
-        uploadStatus.innerHTML = 'Selecione um arquivo para fazer upload'
+        uploadStatus.innerHTML = `Selecione um arquivo para fazer upload`
     }
 })
