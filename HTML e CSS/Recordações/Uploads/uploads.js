@@ -1,32 +1,14 @@
-const url = "localhost:6000/api" 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const uploadform = document.getElementById('upload-form')
-    const imageInput = document.getElementById('image-inpu')
-    const uploadButton = document.getElementById('upload-button')
-    const uploadStatus = document.getElementById('upload-status')
+const inserirHtml = document.getElementById('root')
+
+inserirHtml.addEventListener('click', () => {
+    const novoHtml = `
+    <form action="/HTML e CSS/Recordações/Uploads/uploads.js" method="post" enctype="multipart/form-data">
+        <input type="file" name="imagem" id="imagem">
+        <input type="submit" value="Enviar Imagem">
+    </form>
+    `
+    inserirHtml.innerHTML = novoHtml
 })
 
-uploadButton.addEventListener('click', () => {
-    const file = imageInput.files[0] 
-
-    if (file) {
-        const formData = new FormData()
-        formData.append('image', file)
-
-        fetch('/upload', {
-            method: 'POST',
-            body: formData,
-        })
-        .then(response => response.json())
-        .then(data => {
-            uploadStatus.innerHTML = `Upload bem sucedido: ${data.fileName}`
-        })
-        .catch(error => {
-            console.error('Erro ao fazer upload', error)
-            uploadStatus.innerHTML = 'Erro ao fazer upload'
-        })
-    } else {
-        uploadStatus.innerHTML = `Selecione um arquivo para fazer upload`
-    }
-})
+    

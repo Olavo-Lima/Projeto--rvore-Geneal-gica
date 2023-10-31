@@ -1,0 +1,80 @@
+@import url(./CSS/botrec.css);
+
+body {
+    background-color: rgb(221, 156, 15);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+}
+
+.first_title {
+    background-color: #fdff7c;
+}
+
+h1 {
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5em;
+    width: 97.9%;
+    height: 80%; /* Ajuste a altura conforme necessário */
+    background: transparent; /* Define o fundo como transparente */
+    box-shadow: 0px 3px 5px 5px rgb(255, 255, 255);
+}
+
+h3 {
+    text-align: center;
+    padding-top: 0.6em;
+}
+
+.sobre {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.container a {
+    background-color: white;
+    text-decoration: none;
+    color: #663f1f;
+    padding: 0.4em;
+    margin: 0.8em;
+    border: 01px solid;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 6em;
+}
+
+.list-right,
+.list-left {
+    flex-basis: 48; 
+}
+
+.pais {
+    font-size: 20px;
+    
+}
+
+#pais {
+   display: flex;
+    justify-content: center;
+   text-decoration: none;
+   color: black;
+   font-family: 'Nunito', sans-serif;     
+}

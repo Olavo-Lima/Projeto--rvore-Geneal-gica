@@ -1,9 +1,6 @@
 
 body {
-    background-image: url(/IMG/fundo-principal.jpg);
-    
-
-
+    background-image: url(/IMG/familia5.jpg);
 }
 
 .container {
@@ -11,18 +8,14 @@ body {
 }
 
 .muié {
-    flex: 1;
-    padding: 10px;
-    padding-left: 300px;
-    margin-top: 40px;
+    justify-content: flex-end;
+    
 }
 
 .homem {
-    
-    flex: 1;
-    padding: 10px;
-    padding-left: 300px;
-    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
 }
 
 .border {

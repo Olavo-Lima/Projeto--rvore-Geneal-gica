@@ -1,0 +1,77 @@
+.album {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 900px;
+    margin: 3em;
+    margin-left: 17em;
+    padding: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+a {
+    color: white;
+}
+
+.btnr {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid transparent;
+    font-size: 23px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #acd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #0000;
+}
+
+.btnr:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(90deg) translate(-150%, -50%);
+    transition: all 0.9s;
+} 
+
+.btnr:hover {
+    background-color: #4cc9f0;
+    color: #FFF;
+    box-shadow: 0 2px 0 2px;
+}
+
+.btnr:hover::before {
+    transform: skewX(30deg) translate(360%, -50%);
+    transition-delay: 0.1s;
+}
+
+.btnr:active {
+    transform: scale(0.9);
+}
+
+button:hover {
+    background-color: rgb(241, 249, 5);
+}
+
+button:active {
+    background-color: rgb(255, 255, 108);
+}

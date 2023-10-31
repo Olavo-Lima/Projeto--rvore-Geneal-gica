@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const username = document.getElementById('username').value
         const password = document.getElementById('password').value
 
-        if (username === 'usuario' && password === 'senha') {
+        if (username === 'familialima2023' && password === '161941') {
             alert ("Login bem sucedido!")
             window.location.href = "/HTML e CSS/Recordações/HTML e CSS/HOME/home.html"
         } else {
