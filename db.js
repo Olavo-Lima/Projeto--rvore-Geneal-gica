@@ -6,12 +6,12 @@ mongoose.set('strictQuery', true)
 
 async function main() {
     await mongoose.connect(
-        `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASS}@cluster0.uu0yaai.mongodb.net/?retryWrites=true&w=majority`
+        `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASS}@cluster0.3qwv0qx.mongodb.net/?retryWrites=true&w=majority`
     );
+        console.log("Conectado com sucesso!")
 
-    console.log("Conectado com sucesso!");
 }
 
 main().catch((err) => console.log(err));
 
-module.exports = main;
+module.exports.main;
