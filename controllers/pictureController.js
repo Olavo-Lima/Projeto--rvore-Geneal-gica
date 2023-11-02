@@ -37,7 +37,7 @@ exports.remove = async (req, res) => {
     try {
         const picture = await Picture.findById(req.params.id);
 
-        if(!picture) {
+        if(!pictures) {
             return res.status(500).json({message: "Imagem não encontrada!"});
         }
 
