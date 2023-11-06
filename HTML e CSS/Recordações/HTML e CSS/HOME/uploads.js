@@ -2,21 +2,13 @@
 const inserirHtml = document.getElementById('root')
 
 inserirHtml.addEventListener('click', () => {
-    const novoHtml = `
-    <label class="picture" for="picture__input" tabIndex="0">
-    <span id="picture__image"></span>
-    </label>
-
-    <input type="file" name="picture__input" id="picture__input">
-    `
-    inserirHtml.innerHTML = novoHtml
+    location.href = "./upar.html"
 })
 
     //ADD Img
     const inputFile = document.querySelector("#picture__input");
     const pictureImage = document.querySelector(".picture__image");
     const pictureImageTxt = 'Escolha uma imagem'
-
     pictureImage.innerHTML = pictureImageTxt    
     
     inputFile.addEventListener("change", function (e) {
@@ -43,5 +35,9 @@ inserirHtml.addEventListener('click', () => {
         }
     }); 
 
-
+    $('#seu-botao').click(() => {
+        $.get('/pictures', (data) => {
+          console.log()
+        });
+      });
     

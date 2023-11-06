@@ -14,7 +14,11 @@ exports.create = async (req, res) => {
       await picture.save();
       res.json(picture);
     } catch (err) {
-      res.status(500).json({ message: "Erro ao salvar a imagem." });
+      if (status(404)) {
+        res.status(404).json({ message: "Diretório não encontrado"})
+      } else {
+        res.status(500).json({ message: "Erro ao salvar a imagem." });
+      }
     }
   };
 

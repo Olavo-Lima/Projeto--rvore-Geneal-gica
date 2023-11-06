@@ -39,3 +39,11 @@
     max-width: 100%;
   }
   
+.container {
+    margin-top: 9em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    
+}
