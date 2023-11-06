@@ -1,15 +1,15 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const app = express();
 
-require('dotenv').config();
-require('./db.js')
+require("dotenv").config();
+require("./db");
 
 const port = process.env.PORT || 3000;
 
-const pictureRouter = require('./routes/picture.js');
+const pictureRouter = require("./routes/picture");
 
-app.use('/picture', pictureRouter)
+app.use("/pictures", pictureRouter);
 
 app.listen(port, () => {
-    console.log(`Servidor funcionando na porta ${port}`);
-})
+  console.log(`Servidor conectado => http://localhost:${port}`);
+});

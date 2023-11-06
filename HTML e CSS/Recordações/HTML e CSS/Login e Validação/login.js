@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const username = document.getElementById('username').value
         const password = document.getElementById('password').value
 
-        if (username === 'familialima2023' && password === '161941') {
-            alert ("Login bem sucedido!")
-            window.location.href = "/HTML e CSS/Recordações/HTML e CSS/HOME/home.html"
+        if (password === '161960') {
+            location.href = "/HTML e CSS/Recordações/HTML e CSS/HOME/home.html"
         } else {
             alert ('Senha ou usário incorretos')
         }
     })
 })
+
+
+        

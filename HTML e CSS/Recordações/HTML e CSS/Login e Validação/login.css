@@ -1,5 +1,5 @@
 * {
-    border-radius: 50%;
+    border-radius: 15px;
 }
 
 body {
@@ -7,6 +7,26 @@ body {
     width: auto;
     height: auto;
     color: white;
+}
+
+button {
+    font-size: 14px;
+    padding: 0.5em;
+}
+
+button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #a7a7a7;
+    color: black;
+    transform: scale(1.05);
+    transition: 0.6s;
+    opacity: 20px;
+}
+
+button:active {
+    transform: scale(0);
+    transition: 0.6s ;
 }
 
 h1 {
