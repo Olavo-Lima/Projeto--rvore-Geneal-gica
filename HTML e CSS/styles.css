@@ -1,7 +1,7 @@
 @import url(./CSS/botrec.css);
 
 body {
-    background-color: #ff8800;
+  background: linear-gradient(45deg, yellow, rgb(255, 174, 0));
     
 }
 
@@ -42,13 +42,15 @@ h3 {
     color: white;
 }
 
+.container a:hover {
+    text-decoration: underline;
+}
+
 .container a {
-    background-color: white;
     text-decoration: none;
-    color: #663f1f;
+    color: #282420;
     padding: 0.4em;
     margin: 0.8em;
-    border: 01px solid;
     border-radius: 10px;
     grid-template-columns: 1fr;
     
@@ -67,7 +69,9 @@ h3 {
 }
 
 #pais {
+    display: flex;
     justify-content: center;
+    text-align: center;
    color: black;
    font-family: 'Nunito', sans-serif;     
 }

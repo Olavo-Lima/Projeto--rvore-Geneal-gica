@@ -1,7 +1,3 @@
-* {
-    text-align: center;
-}
-
 .up-btn {
     position: absolute;
     right: 0;
@@ -10,3 +6,7 @@
     top: 0;
 }
 
+.album {
+    text-align: center;
+    cursor: pointer;
+}
