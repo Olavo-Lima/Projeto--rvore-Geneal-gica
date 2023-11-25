@@ -1,0 +1,12 @@
+.up-btn {
+    position: absolute;
+    right: 0;
+    margin: 1em;
+    
+    top: 0;
+}
+
+.album {
+    text-align: center;
+    cursor: pointer;
+}
