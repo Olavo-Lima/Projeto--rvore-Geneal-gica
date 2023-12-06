@@ -1,12 +1,28 @@
+
+.title {
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .up-btn {
     position: absolute;
     right: 0;
     margin: 1em;
-    
     top: 0;
 }
 
 .album {
     text-align: center;
     cursor: pointer;
+    font-family: 'Consolas';
+}
+
+#retornar {
+    margin-top: 1em;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+    width: 200px;
+    border: hidden;
 }
