@@ -6,20 +6,20 @@ const home = document.getElementById('retornar')
 
 natal.addEventListener('click', () => {
     location.href = "./albuns/natal.html"
-})
+});
 
 familia.addEventListener('click', () => {
     location.href = "./albuns/familia.html"
-})
+});
 
 jem.addEventListener('click', () => {
     location.href = "./albuns/jem.html"
-})
+});
 
 junina.addEventListener('click', () => {
     location.href = "./albuns/junina.html"
-})
+});
 
 home.addEventListener('click', () => {
     location.href = '/HTML e CSS/index.html'
-})
+});

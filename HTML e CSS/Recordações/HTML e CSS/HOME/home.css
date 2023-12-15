@@ -29,7 +29,6 @@ body {
 
 .album {
     text-align: center;
-    cursor: pointer;
     font-family: 'Consolas';
 }
 
@@ -41,4 +40,20 @@ body {
     width: 200px;
     border: hidden;
     font-size: 15px;
+}
+
+.natal {
+    cursor: pointer;
+}
+
+.familia {
+    cursor: pointer;
+}
+
+.jem {
+    cursor: pointer;
+}
+
+.junina {
+    cursor: pointer;
 }
