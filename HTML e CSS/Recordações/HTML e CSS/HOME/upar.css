@@ -1,3 +1,11 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10em;
+}
+
 #picture__input {
     display: none;
   }
